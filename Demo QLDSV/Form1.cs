@@ -37,7 +37,7 @@ namespace Demo_QLDSV
 
         public void initForm()
         {
-            Program.frmChinh.lblName.Text = "UserID : " + Program.currentID + "\nUsername : " + Program.currentLoginName + "\nGroup : " + Program.currentRole;
+         //   Program.frmChinh.lblName.Text = "UserID : " + Program.currentID + "\nUsername : " + Program.currentLoginName + "\nGroup : " + Program.currentRole;
             //Program.frmChinh.userName.Text = "Username : " + Program.currentLoginName;
             //Program.frmChinh.userRole.Text = "Group : " + Program.currentRole;
 
@@ -52,13 +52,7 @@ namespace Demo_QLDSV
 
         private void barButtonItem3_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Form frm = this.CheckExists(typeof(Form3));
-            if (frm != null) frm.Activate();
-            else
-            {
-                Form3 f = new Form3();
-                f.Show();
-            }
+           
         }
     }
 }

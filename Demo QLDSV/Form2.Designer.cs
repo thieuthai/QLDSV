@@ -30,15 +30,15 @@
         {
             this.components = new System.ComponentModel.Container();
             this.cbbTenKhoa = new System.Windows.Forms.ComboBox();
+            this.bdsKhoa = new System.Windows.Forms.BindingSource(this.components);
+            this.qLDSV_VIEWKHOA = new Demo_QLDSV.QLDSV_VIEWKHOA();
             this.txtUser = new System.Windows.Forms.TextBox();
             this.txtPass = new System.Windows.Forms.TextBox();
-            this.qLDSV_VIEWKHOA = new Demo_QLDSV.QLDSV_VIEWKHOA();
-            this.bdsKhoa = new System.Windows.Forms.BindingSource(this.components);
             this.v_DS_PHANMANHTableAdapter = new Demo_QLDSV.QLDSV_VIEWKHOATableAdapters.V_DS_PHANMANHTableAdapter();
             this.tableAdapterManager = new Demo_QLDSV.QLDSV_VIEWKHOATableAdapters.TableAdapterManager();
             this.btnLogin = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.qLDSV_VIEWKHOA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bdsKhoa)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLDSV_VIEWKHOA)).BeginInit();
             this.SuspendLayout();
             // 
             // cbbTenKhoa
@@ -51,6 +51,16 @@
             this.cbbTenKhoa.Size = new System.Drawing.Size(261, 21);
             this.cbbTenKhoa.TabIndex = 0;
             this.cbbTenKhoa.ValueMember = "TENSERVER";
+            // 
+            // bdsKhoa
+            // 
+            this.bdsKhoa.DataMember = "V_DS_PHANMANH";
+            this.bdsKhoa.DataSource = this.qLDSV_VIEWKHOA;
+            // 
+            // qLDSV_VIEWKHOA
+            // 
+            this.qLDSV_VIEWKHOA.DataSetName = "QLDSV_VIEWKHOA";
+            this.qLDSV_VIEWKHOA.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // txtUser
             // 
@@ -65,16 +75,6 @@
             this.txtPass.Name = "txtPass";
             this.txtPass.Size = new System.Drawing.Size(261, 20);
             this.txtPass.TabIndex = 2;
-            // 
-            // qLDSV_VIEWKHOA
-            // 
-            this.qLDSV_VIEWKHOA.DataSetName = "QLDSV_VIEWKHOA";
-            this.qLDSV_VIEWKHOA.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // bdsKhoa
-            // 
-            this.bdsKhoa.DataMember = "V_DS_PHANMANH";
-            this.bdsKhoa.DataSource = this.qLDSV_VIEWKHOA;
             // 
             // v_DS_PHANMANHTableAdapter
             // 
@@ -108,8 +108,8 @@
             this.Name = "Form2";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.qLDSV_VIEWKHOA)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bdsKhoa)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLDSV_VIEWKHOA)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

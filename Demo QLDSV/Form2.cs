@@ -1,10 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 
 namespace Demo_QLDSV
@@ -82,7 +76,11 @@ namespace Demo_QLDSV
 
         public void initForm()
         {
-            Program.frmChinh.lblName.Text = "UserID : " + Program.currentID + "\nUsername : " + Program.currentLoginName + "\nGroup : " + Program.currentRole;
+          //  Program..lblName.Text = "UserID : " + Program.currentID + "\nUsername : " + Program.currentLoginName + "\nGroup : " + Program.currentRole;
+            this.Hide();
+            var mainForm = new MainForm();
+            mainForm.Closed += (s, args) => this.Close();
+            mainForm.Show();
             //Program.frmChinh.userName.Text = "Username : " + Program.currentLoginName;
             //Program.frmChinh.userRole.Text = "Group : " + Program.currentRole;
 
