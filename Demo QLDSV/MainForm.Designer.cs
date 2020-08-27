@@ -33,11 +33,13 @@
             this.btnSubject = new System.Windows.Forms.Button();
             this.btnFee = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnStudent
             // 
-            this.btnStudent.Location = new System.Drawing.Point(108, 38);
+            this.btnStudent.Location = new System.Drawing.Point(81, 31);
             this.btnStudent.Name = "btnStudent";
             this.btnStudent.Size = new System.Drawing.Size(155, 67);
             this.btnStudent.TabIndex = 0;
@@ -47,7 +49,7 @@
             // 
             // btnClass
             // 
-            this.btnClass.Location = new System.Drawing.Point(343, 38);
+            this.btnClass.Location = new System.Drawing.Point(267, 31);
             this.btnClass.Name = "btnClass";
             this.btnClass.Size = new System.Drawing.Size(155, 67);
             this.btnClass.TabIndex = 1;
@@ -56,7 +58,7 @@
             // 
             // btnSubject
             // 
-            this.btnSubject.Location = new System.Drawing.Point(108, 146);
+            this.btnSubject.Location = new System.Drawing.Point(81, 120);
             this.btnSubject.Name = "btnSubject";
             this.btnSubject.Size = new System.Drawing.Size(155, 67);
             this.btnSubject.TabIndex = 2;
@@ -66,7 +68,7 @@
             // 
             // btnFee
             // 
-            this.btnFee.Location = new System.Drawing.Point(343, 146);
+            this.btnFee.Location = new System.Drawing.Point(267, 120);
             this.btnFee.Name = "btnFee";
             this.btnFee.Size = new System.Drawing.Size(155, 67);
             this.btnFee.TabIndex = 3;
@@ -83,11 +85,31 @@
             this.btnLogout.UseVisualStyleBackColor = true;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(449, 31);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(155, 67);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "Tao tai khoan";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(449, 120);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(155, 67);
+            this.button2.TabIndex = 6;
+            this.button2.Text = "In an";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(700, 268);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.btnFee);
             this.Controls.Add(this.btnSubject);
@@ -106,5 +128,7 @@
         private System.Windows.Forms.Button btnSubject;
         private System.Windows.Forms.Button btnFee;
         private System.Windows.Forms.Button btnLogout;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }

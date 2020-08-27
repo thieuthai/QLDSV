@@ -42,7 +42,6 @@ namespace Demo_QLDSV
 
         public static BindingSource bds = new BindingSource();
         public static BindingSource currentBidingSource = new BindingSource();
-        public static Form2 loginForm;
 
         public static String insertDepID = "";
         public static String insertSubjectID = "";
@@ -140,7 +139,7 @@ namespace Demo_QLDSV
 
             BonusSkins.Register();
             SkinManager.EnableFormSkins();
-            loginForm = new Form2();
+            var loginForm = new frmLogin();
             Application.Run(loginForm);
         }
 

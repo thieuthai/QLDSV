@@ -52,14 +52,14 @@ namespace Demo_QLDSV
 
         private void barButtonItem3_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Form frm = this.CheckExists(typeof(Form3));
-            if (frm != null) frm.Activate();
-            else
-            {
-                Form3 f = new Form3();
-                f.Show();
-                
-            }
+           // Form frm = this.CheckExists(typeof(Form3));
+           // if (frm != null) frm.Activate();
+          //  else
+          //  {
+          //      Form3 f = new Form3();
+          //      f.Show();
+         //       
+         //   }
         }
 
         private void barButtonItem2_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)

@@ -20,23 +20,18 @@ namespace Demo_QLDSV
 
             switch (Program.currentRole)
             {
-                case "PGV":
-                    btnStudent.Enabled = true;
-                    btnSubject.Enabled = true;
-                    btnClass.Enabled = true;
-                    btnFee.Enabled = true;
-                    break;
-                case "KHOA":
-                    btnStudent.Enabled = true;
-                    btnSubject.Enabled = true;
-                    btnClass.Enabled = true;
-                    btnFee.Enabled = true;
-                    break;
+                
                 case "PKT":
-                    // code block
+                    btnStudent.Enabled = true;
+                    btnSubject.Enabled = true;
+                    btnClass.Enabled = true;
+                    btnFee.Enabled = false;
                     break;
                 default:
-                    // code block
+                    btnStudent.Enabled = true;
+                    btnSubject.Enabled = true;
+                    btnClass.Enabled = true;
+                    btnFee.Enabled = false;
                     break;
             }
         }
@@ -55,7 +50,7 @@ namespace Demo_QLDSV
         private void btnLogout_Click(object sender, EventArgs e)
         {
             this.Hide();
-            var loginForm = new Form2();
+            var loginForm = new frmLogin();
             loginForm.Closed += (s, args) => this.Close();
             loginForm.Show();
         }
