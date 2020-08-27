@@ -32,7 +32,7 @@
             DevExpress.XtraGrid.GridLevelNode gridLevelNode1 = new DevExpress.XtraGrid.GridLevelNode();
             DevExpress.XtraGrid.GridLevelNode gridLevelNode2 = new DevExpress.XtraGrid.GridLevelNode();
             DevExpress.XtraGrid.GridLevelNode gridLevelNode3 = new DevExpress.XtraGrid.GridLevelNode();
-            this.qLDSVDataSet = new Demo_QLDSV.QLDSVDataSet();
+            this.qldsvDS = new Demo_QLDSV.QLDSVDataSet();
             this.lOPBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.lOPTableAdapter = new Demo_QLDSV.QLDSVDataSetTableAdapters.LOPTableAdapter();
             this.tableAdapterManager = new Demo_QLDSV.QLDSVDataSetTableAdapters.TableAdapterManager();
@@ -42,21 +42,21 @@
             this.colTENLOP = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colMAKH = new DevExpress.XtraGrid.Columns.GridColumn();
             this.cbbDep = new System.Windows.Forms.ComboBox();
-            ((System.ComponentModel.ISupportInitialize)(this.qLDSVDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qldsvDS)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lOPBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lOPGridControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // qLDSVDataSet
+            // qldsvDS
             // 
-            this.qLDSVDataSet.DataSetName = "QLDSVDataSet";
-            this.qLDSVDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.qldsvDS.DataSetName = "QLDSVDataSet";
+            this.qldsvDS.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // lOPBindingSource
             // 
             this.lOPBindingSource.DataMember = "LOP";
-            this.lOPBindingSource.DataSource = this.qLDSVDataSet;
+            this.lOPBindingSource.DataSource = this.qldsvDS;
             // 
             // lOPTableAdapter
             // 
@@ -152,7 +152,7 @@
             this.Name = "Form3";
             this.Text = "Form3";
             this.Load += new System.EventHandler(this.Form3_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.qLDSVDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qldsvDS)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lOPBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lOPGridControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
@@ -162,7 +162,7 @@
 
         #endregion
 
-        private QLDSVDataSet qLDSVDataSet;
+        private QLDSVDataSet qldsvDS;
         private System.Windows.Forms.BindingSource lOPBindingSource;
         private QLDSVDataSetTableAdapters.LOPTableAdapter lOPTableAdapter;
         private QLDSVDataSetTableAdapters.TableAdapterManager tableAdapterManager;

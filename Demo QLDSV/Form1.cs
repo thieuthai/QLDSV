@@ -24,13 +24,13 @@ namespace Demo_QLDSV
             return null;
         }
 
-        private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        private void btnLogin_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            Form frm = this.CheckExists(typeof(Form2));
+            Form frm = this.CheckExists(typeof(frmLogin));
             if (frm != null) frm.Activate();
             else
             {
-                Form2 f = new Form2();
+                frmLogin f = new frmLogin();
                 f.Show();
             }
         }
@@ -52,7 +52,24 @@ namespace Demo_QLDSV
 
         private void barButtonItem3_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-           
+            Form frm = this.CheckExists(typeof(Form3));
+            if (frm != null) frm.Activate();
+            else
+            {
+                Form3 f = new Form3();
+                f.Show();
+                
+            }
+        }
+
+        private void barButtonItem2_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
+        }
+
+        private void btnLogout_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
         }
     }
 }

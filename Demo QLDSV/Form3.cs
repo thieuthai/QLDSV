@@ -20,16 +20,16 @@ namespace Demo_QLDSV
         {
             this.Validate();
             this.lOPBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.qLDSVDataSet);
+            this.tableAdapterManager.UpdateAll(this.qldsvDS);
 
         }
 
         private void Form3_Load(object sender, EventArgs e)
         {
-            qLDSVDataSet.EnforceConstraints = false;
+            qldsvDS.EnforceConstraints = false;
             // TODO: This line of code loads data into the 'qLDSVDataSet.LOP' table. You can move, or remove it, as needed.
             this.lOPTableAdapter.Connection.ConnectionString = Program.connectStr;
-            this.lOPTableAdapter.Fill(this.qLDSVDataSet.LOP);
+            this.lOPTableAdapter.Fill(this.qldsvDS.LOP);
 
             cbbDep.DataSource = Program.bds;
             cbbDep.DisplayMember = "TENKHOA";
@@ -70,7 +70,7 @@ namespace Demo_QLDSV
                 else
                 {
                     this.lOPTableAdapter.Connection.ConnectionString = Program.connectStr;
-                    this.lOPTableAdapter.Fill(this.qLDSVDataSet.LOP);
+                    this.lOPTableAdapter.Fill(this.qldsvDS.LOP);
                 }
             }
         }
