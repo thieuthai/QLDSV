@@ -43,7 +43,7 @@
             this.btnStudent.Name = "btnStudent";
             this.btnStudent.Size = new System.Drawing.Size(155, 67);
             this.btnStudent.TabIndex = 0;
-            this.btnStudent.Text = "Quan ly sinh vien";
+            this.btnStudent.Text = "Quản lý sinh viên";
             this.btnStudent.UseVisualStyleBackColor = true;
             this.btnStudent.MouseDown += new System.Windows.Forms.MouseEventHandler(this.onBtnStudentPress);
             // 
@@ -53,7 +53,7 @@
             this.btnClass.Name = "btnClass";
             this.btnClass.Size = new System.Drawing.Size(155, 67);
             this.btnClass.TabIndex = 1;
-            this.btnClass.Text = "Quan ly lop";
+            this.btnClass.Text = "Quản lý lớp";
             this.btnClass.UseVisualStyleBackColor = true;
             // 
             // btnSubject
@@ -62,7 +62,7 @@
             this.btnSubject.Name = "btnSubject";
             this.btnSubject.Size = new System.Drawing.Size(155, 67);
             this.btnSubject.TabIndex = 2;
-            this.btnSubject.Text = "Quan ly mon hoc";
+            this.btnSubject.Text = "Quản lý môn học";
             this.btnSubject.UseVisualStyleBackColor = true;
             this.btnSubject.MouseClick += new System.Windows.Forms.MouseEventHandler(this.onbtnSubjectPress);
             // 
@@ -72,7 +72,7 @@
             this.btnFee.Name = "btnFee";
             this.btnFee.Size = new System.Drawing.Size(155, 67);
             this.btnFee.TabIndex = 3;
-            this.btnFee.Text = "Quan ly hoc phi";
+            this.btnFee.Text = "Quản lý học phí";
             this.btnFee.UseVisualStyleBackColor = true;
             // 
             // btnLogout
@@ -81,7 +81,7 @@
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(92, 47);
             this.btnLogout.TabIndex = 4;
-            this.btnLogout.Text = "Dang xuat";
+            this.btnLogout.Text = "Đăng xuất";
             this.btnLogout.UseVisualStyleBackColor = true;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
@@ -91,7 +91,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(155, 67);
             this.button1.TabIndex = 5;
-            this.button1.Text = "Tao tai khoan";
+            this.button1.Text = "Tạo tài khoản";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // button2
@@ -100,7 +100,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(155, 67);
             this.button2.TabIndex = 6;
-            this.button2.Text = "In an";
+            this.button2.Text = "In ấn";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // MainForm

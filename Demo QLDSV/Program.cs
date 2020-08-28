@@ -60,6 +60,7 @@ namespace Demo_QLDSV
             public const string Delete = "D";
         }
 
+
         public static int Connection()
         {
             if (Program.connect != null && Program.connect.State == ConnectionState.Open)
