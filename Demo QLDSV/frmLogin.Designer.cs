@@ -46,6 +46,7 @@
             // 
             this.cbbTenKhoa.DataSource = this.bdsKhoa;
             this.cbbTenKhoa.DisplayMember = "TENKHOA";
+            this.cbbTenKhoa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbbTenKhoa.FormattingEnabled = true;
             this.cbbTenKhoa.Location = new System.Drawing.Point(97, 49);
             this.cbbTenKhoa.Name = "cbbTenKhoa";
@@ -74,8 +75,10 @@
             // 
             this.txtPass.Location = new System.Drawing.Point(97, 140);
             this.txtPass.Name = "txtPass";
+            this.txtPass.PasswordChar = '*';
             this.txtPass.Size = new System.Drawing.Size(261, 20);
             this.txtPass.TabIndex = 2;
+            this.txtPass.UseSystemPasswordChar = true;
             // 
             // v_DS_PHANMANHTableAdapter
             // 

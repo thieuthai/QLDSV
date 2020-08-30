@@ -58,7 +58,7 @@
             this.fKSINHVIENLOPBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.fKSINHVIENLOPBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.fillByToolStrip = new System.Windows.Forms.ToolStrip();
-            this.fillByToolStripButton = new System.Windows.Forms.ToolStripButton();
+
             this.spkiemtrasinhvienBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.sp_kiemtrasinhvienTableAdapter = new Demo_QLDSV.QLDSVDataSetTableAdapters.sp_kiemtrasinhvienTableAdapter();
             this.spLayDsLopTheoKhoaBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -271,24 +271,7 @@
             // 
             this.fKSINHVIENLOPBindingSource1.DataMember = "FK_SINHVIEN_LOP";
             this.fKSINHVIENLOPBindingSource1.DataSource = this.lOPBindingSource;
-            // 
-            // fillByToolStrip
-            // 
-            this.fillByToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fillByToolStripButton});
-            this.fillByToolStrip.Location = new System.Drawing.Point(0, 0);
-            this.fillByToolStrip.Name = "fillByToolStrip";
-            this.fillByToolStrip.Size = new System.Drawing.Size(800, 25);
-            this.fillByToolStrip.TabIndex = 14;
-            this.fillByToolStrip.Text = "fillByToolStrip";
-            // 
-            // fillByToolStripButton
-            // 
-            this.fillByToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.fillByToolStripButton.Name = "fillByToolStripButton";
-            this.fillByToolStripButton.Size = new System.Drawing.Size(39, 22);
-            this.fillByToolStripButton.Text = "FillBy";
-            this.fillByToolStripButton.Click += new System.EventHandler(this.fillByToolStripButton_Click);
+            
             // 
             // spkiemtrasinhvienBindingSource
             // 
@@ -375,7 +358,6 @@
         private System.Windows.Forms.BindingSource fKSINHVIENLOPBindingSource;
         private System.Windows.Forms.BindingSource fKSINHVIENLOPBindingSource1;
         private System.Windows.Forms.ToolStrip fillByToolStrip;
-        private System.Windows.Forms.ToolStripButton fillByToolStripButton;
         private System.Windows.Forms.BindingSource spLayDsLopTheoKhoaBindingSource;
         private System.Windows.Forms.BindingSource spkiemtrasinhvienBindingSource;
         private QLDSVDataSetTableAdapters.sp_kiemtrasinhvienTableAdapter sp_kiemtrasinhvienTableAdapter;

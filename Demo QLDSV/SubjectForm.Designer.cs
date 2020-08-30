@@ -31,29 +31,24 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SubjectForm));
             this.qLDSVDataSet = new Demo_QLDSV.QLDSVDataSet();
-            this.mONHOCBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.mONHOCTableAdapter = new Demo_QLDSV.QLDSVDataSetTableAdapters.MONHOCTableAdapter();
-            this.monhocTableAdapter1 = new Demo_QLDSV.QLDSVDataSetTableAdapters.MONHOCTableAdapter();
             this.tableAdapterManager = new Demo_QLDSV.QLDSVDataSetTableAdapters.TableAdapterManager();
             this.btnDelete = new DevExpress.XtraEditors.SimpleButton();
             this.btnUndo = new DevExpress.XtraEditors.SimpleButton();
             this.btnSave = new DevExpress.XtraEditors.SimpleButton();
             this.btnExit = new DevExpress.XtraEditors.SimpleButton();
-            this.gridControl = new DevExpress.XtraGrid.GridControl();
-            this.mONHOCBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.tbMaMH = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tbTenMH = new System.Windows.Forms.TextBox();
             this.btnAdd = new DevExpress.XtraEditors.SimpleButton();
-            this.colMAMH = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colTENMH = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.mONHOCBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.mONHOCTableAdapter = new Demo_QLDSV.QLDSVDataSetTableAdapters.MONHOCTableAdapter();
+            this.gridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.qLDSVDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mONHOCBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mONHOCBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView)).BeginInit();
             this.SuspendLayout();
             // 
             // qLDSVDataSet
@@ -61,28 +56,16 @@
             this.qLDSVDataSet.DataSetName = "QLDSVDataSet";
             this.qLDSVDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // mONHOCBindingSource
-            // 
-            this.mONHOCBindingSource.DataMember = "MONHOC";
-            this.mONHOCBindingSource.DataSource = this.qLDSVDataSet;
-            // 
-            // mONHOCTableAdapter
-            // 
-            this.mONHOCTableAdapter.ClearBeforeFill = true;
-            // 
-            // monhocTableAdapter1
-            // 
-            this.monhocTableAdapter1.ClearBeforeFill = true;
-            // 
             // tableAdapterManager
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.Connection = null;
             this.tableAdapterManager.DIEMTableAdapter = null;
             this.tableAdapterManager.GIANGVIENTableAdapter = null;
             this.tableAdapterManager.HOCPHITableAdapter = null;
             this.tableAdapterManager.KHOATableAdapter = null;
             this.tableAdapterManager.LOPTableAdapter = null;
-            this.tableAdapterManager.MONHOCTableAdapter = this.mONHOCTableAdapter;
+            this.tableAdapterManager.MONHOCTableAdapter = null;
             this.tableAdapterManager.SINHVIENTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = Demo_QLDSV.QLDSVDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
@@ -95,6 +78,7 @@
             this.btnDelete.Size = new System.Drawing.Size(77, 58);
             this.btnDelete.TabIndex = 8;
             this.btnDelete.Text = "Xóa";
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnUndo
             // 
@@ -105,6 +89,7 @@
             this.btnUndo.Size = new System.Drawing.Size(77, 58);
             this.btnUndo.TabIndex = 9;
             this.btnUndo.Text = "Phục hồi";
+            this.btnUndo.Click += new System.EventHandler(this.btnUndo_Click);
             // 
             // btnSave
             // 
@@ -115,6 +100,7 @@
             this.btnSave.Size = new System.Drawing.Size(77, 58);
             this.btnSave.TabIndex = 10;
             this.btnSave.Text = "Lưu";
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnExit
             // 
@@ -125,30 +111,7 @@
             this.btnExit.Size = new System.Drawing.Size(77, 58);
             this.btnExit.TabIndex = 11;
             this.btnExit.Text = "Thoát";
-            // 
-            // gridControl
-            // 
-            this.gridControl.DataSource = this.mONHOCBindingSource1;
-            this.gridControl.Location = new System.Drawing.Point(12, 146);
-            this.gridControl.MainView = this.gridView1;
-            this.gridControl.Name = "gridControl";
-            this.gridControl.Size = new System.Drawing.Size(696, 307);
-            this.gridControl.TabIndex = 12;
-            this.gridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView1});
-            // 
-            // mONHOCBindingSource1
-            // 
-            this.mONHOCBindingSource1.DataMember = "MONHOC";
-            this.mONHOCBindingSource1.DataSource = this.qLDSVDataSet;
-            // 
-            // gridView1
-            // 
-            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.colMAMH,
-            this.colTENMH});
-            this.gridView1.GridControl = this.gridControl;
-            this.gridView1.Name = "gridView1";
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // tbMaMH
             // 
@@ -193,31 +156,55 @@
             this.btnAdd.Text = "Thêm";
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click_1);
             // 
-            // colMAMH
+            // mONHOCBindingSource
             // 
-            this.colMAMH.FieldName = "MAMH";
-            this.colMAMH.Name = "colMAMH";
-            this.colMAMH.Visible = true;
-            this.colMAMH.VisibleIndex = 0;
+            this.mONHOCBindingSource.DataMember = "MONHOC";
+            this.mONHOCBindingSource.DataSource = this.qLDSVDataSet;
             // 
-            // colTENMH
+            // mONHOCTableAdapter
             // 
-            this.colTENMH.FieldName = "TENMH";
-            this.colTENMH.Name = "colTENMH";
-            this.colTENMH.Visible = true;
-            this.colTENMH.VisibleIndex = 1;
+            this.mONHOCTableAdapter.ClearBeforeFill = true;
+            // 
+            // gridView
+            // 
+            this.gridView.AllowUserToAddRows = false;
+            this.gridView.AutoGenerateColumns = false;
+            this.gridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2});
+            this.gridView.DataSource = this.mONHOCBindingSource;
+            this.gridView.Location = new System.Drawing.Point(12, 137);
+            this.gridView.Name = "gridView";
+            this.gridView.ReadOnly = true;
+            this.gridView.Size = new System.Drawing.Size(696, 346);
+            this.gridView.TabIndex = 18;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "MAMH";
+            this.dataGridViewTextBoxColumn1.HeaderText = "MAMH";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "TENMH";
+            this.dataGridViewTextBoxColumn2.HeaderText = "TENMH";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
             // 
             // SubjectForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(720, 465);
+            this.ClientSize = new System.Drawing.Size(720, 495);
+            this.Controls.Add(this.gridView);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.tbTenMH);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tbMaMH);
-            this.Controls.Add(this.gridControl);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnUndo);
@@ -227,9 +214,7 @@
             this.Load += new System.EventHandler(this.SubjectForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.qLDSVDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mONHOCBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mONHOCBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -237,23 +222,20 @@
 
         #endregion
         private QLDSVDataSet qLDSVDataSet;
-        private System.Windows.Forms.BindingSource mONHOCBindingSource;
-        private QLDSVDataSetTableAdapters.MONHOCTableAdapter mONHOCTableAdapter;
-        private QLDSVDataSetTableAdapters.MONHOCTableAdapter monhocTableAdapter1;
         private QLDSVDataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private DevExpress.XtraEditors.SimpleButton btnDelete;
         private DevExpress.XtraEditors.SimpleButton btnUndo;
         private DevExpress.XtraEditors.SimpleButton btnSave;
         private DevExpress.XtraEditors.SimpleButton btnExit;
-        private DevExpress.XtraGrid.GridControl gridControl;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
-        private System.Windows.Forms.BindingSource mONHOCBindingSource1;
         private System.Windows.Forms.TextBox tbMaMH;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox tbTenMH;
         private DevExpress.XtraEditors.SimpleButton btnAdd;
-        private DevExpress.XtraGrid.Columns.GridColumn colMAMH;
-        private DevExpress.XtraGrid.Columns.GridColumn colTENMH;
+        private System.Windows.Forms.BindingSource mONHOCBindingSource;
+        private QLDSVDataSetTableAdapters.MONHOCTableAdapter mONHOCTableAdapter;
+        private System.Windows.Forms.DataGridView gridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
     }
 }

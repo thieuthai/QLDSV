@@ -14,6 +14,7 @@ namespace Demo_QLDSV
         {
             // TODO: This line of code loads data into the 'qLDSV_VIEWKHOA.V_DS_PHANMANH' table. You can move, or remove it, as needed.
             this.v_DS_PHANMANHTableAdapter.Fill(this.qLDSV_VIEWKHOA.V_DS_PHANMANH);
+            
 
         }
 

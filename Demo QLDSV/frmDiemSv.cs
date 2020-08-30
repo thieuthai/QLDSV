@@ -93,17 +93,6 @@ namespace Demo_QLDSV
 
         }
 
-        private void fillByToolStripButton_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                this.lOPTableAdapter.FillBy(this.qLDSVDataSet.LOP);
-            }
-            catch (System.Exception ex)
-            {
-                System.Windows.Forms.MessageBox.Show(ex.Message);
-            }
-
-        }
+   
     }
 }
