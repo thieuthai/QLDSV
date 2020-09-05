@@ -54,5 +54,17 @@ namespace Demo_QLDSV
             loginForm.Closed += (s, args) => this.Close();
             loginForm.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            var frmReport = new frmReport();
+            frmReport.Show();
+        }
+
+        private void btnStudent_Click(object sender, EventArgs e)
+        {
+            var dssvLopForm = new frmDiemSv();
+            dssvLopForm.Show();
+        }
     }
 }

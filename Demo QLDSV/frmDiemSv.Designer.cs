@@ -40,42 +40,37 @@
             this.cbbSubject = new System.Windows.Forms.ComboBox();
             this.mONHOCBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cbbClass = new System.Windows.Forms.ComboBox();
+            this.spLayDsLopTheoKhoaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.lOPBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.colLAN = new DevExpress.XtraGrid.Columns.GridColumn();
             this.sp_LayDiemSinhVienBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.sp_LayDiemSinhVienTableAdapter = new Demo_QLDSV.QLDSVDataSetTableAdapters.sp_LayDiemSinhVienTableAdapter();
-            this.sp_LayDiemSinhVienGridControl = new DevExpress.XtraGrid.GridControl();
-            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.colMASV = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colHOTEN = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colDiem = new DevExpress.XtraGrid.Columns.GridColumn();
             this.btnSave = new System.Windows.Forms.Button();
             this.lOPTableAdapter = new Demo_QLDSV.QLDSVDataSetTableAdapters.LOPTableAdapter();
             this.mONHOCTableAdapter = new Demo_QLDSV.QLDSVDataSetTableAdapters.MONHOCTableAdapter();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbLan = new System.Windows.Forms.TextBox();
             this.fKSINHVIENLOPBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.fKSINHVIENLOPBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.fillByToolStrip = new System.Windows.Forms.ToolStrip();
-
             this.spkiemtrasinhvienBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.sp_kiemtrasinhvienTableAdapter = new Demo_QLDSV.QLDSVDataSetTableAdapters.sp_kiemtrasinhvienTableAdapter();
-            this.spLayDsLopTheoKhoaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.sp_LayDsLopTheoKhoaTableAdapter = new Demo_QLDSV.QLDSVDataSetTableAdapters.sp_LayDsLopTheoKhoaTableAdapter();
+            this.spLayDsLopBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.gridView = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.qLDSVDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bdsDiem)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sINHVIENBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mONHOCBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spLayDsLopTheoKhoaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lOPBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sp_LayDiemSinhVienBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sp_LayDiemSinhVienGridControl)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fKSINHVIENLOPBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fKSINHVIENLOPBindingSource1)).BeginInit();
-            this.fillByToolStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.spkiemtrasinhvienBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.spLayDsLopTheoKhoaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spLayDsLopBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView)).BeginInit();
             this.SuspendLayout();
             // 
             // qLDSVDataSet
@@ -126,7 +121,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(249, 88);
+            this.label1.Location = new System.Drawing.Point(297, 86);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(49, 13);
             this.label1.TabIndex = 6;
@@ -137,9 +132,9 @@
             this.cbbSubject.DataSource = this.mONHOCBindingSource;
             this.cbbSubject.DisplayMember = "TENMH";
             this.cbbSubject.FormattingEnabled = true;
-            this.cbbSubject.Location = new System.Drawing.Point(304, 85);
+            this.cbbSubject.Location = new System.Drawing.Point(352, 83);
             this.cbbSubject.Name = "cbbSubject";
-            this.cbbSubject.Size = new System.Drawing.Size(121, 21);
+            this.cbbSubject.Size = new System.Drawing.Size(208, 21);
             this.cbbSubject.TabIndex = 7;
             this.cbbSubject.ValueMember = "MAMH";
             // 
@@ -150,14 +145,16 @@
             // 
             // cbbClass
             // 
-            this.cbbClass.DataSource = this.spLayDsLopTheoKhoaBindingSource;
-            this.cbbClass.DisplayMember = "MALOP";
             this.cbbClass.FormattingEnabled = true;
-            this.cbbClass.Location = new System.Drawing.Point(80, 83);
+            this.cbbClass.Location = new System.Drawing.Point(43, 82);
             this.cbbClass.Name = "cbbClass";
-            this.cbbClass.Size = new System.Drawing.Size(121, 21);
+            this.cbbClass.Size = new System.Drawing.Size(238, 21);
             this.cbbClass.TabIndex = 8;
-            this.cbbClass.ValueMember = "TENLOP";
+            // 
+            // spLayDsLopTheoKhoaBindingSource
+            // 
+            this.spLayDsLopTheoKhoaBindingSource.DataMember = "sp_LayDsLopTheoKhoa";
+            this.spLayDsLopTheoKhoaBindingSource.DataSource = this.qLDSVDataSet;
             // 
             // lOPBindingSource
             // 
@@ -167,7 +164,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(41, 87);
+            this.label2.Location = new System.Drawing.Point(12, 85);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(25, 13);
             this.label2.TabIndex = 9;
@@ -176,7 +173,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(469, 88);
+            this.label3.Location = new System.Drawing.Point(576, 88);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(39, 13);
             this.label3.TabIndex = 10;
@@ -196,47 +193,6 @@
             // 
             this.sp_LayDiemSinhVienTableAdapter.ClearBeforeFill = true;
             // 
-            // sp_LayDiemSinhVienGridControl
-            // 
-            this.sp_LayDiemSinhVienGridControl.DataSource = this.sp_LayDiemSinhVienBindingSource;
-            this.sp_LayDiemSinhVienGridControl.Location = new System.Drawing.Point(22, 127);
-            this.sp_LayDiemSinhVienGridControl.MainView = this.gridView1;
-            this.sp_LayDiemSinhVienGridControl.Name = "sp_LayDiemSinhVienGridControl";
-            this.sp_LayDiemSinhVienGridControl.Size = new System.Drawing.Size(727, 220);
-            this.sp_LayDiemSinhVienGridControl.TabIndex = 11;
-            this.sp_LayDiemSinhVienGridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView1});
-            // 
-            // gridView1
-            // 
-            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.colMASV,
-            this.colHOTEN,
-            this.colDiem});
-            this.gridView1.GridControl = this.sp_LayDiemSinhVienGridControl;
-            this.gridView1.Name = "gridView1";
-            // 
-            // colMASV
-            // 
-            this.colMASV.FieldName = "MASV";
-            this.colMASV.Name = "colMASV";
-            this.colMASV.Visible = true;
-            this.colMASV.VisibleIndex = 0;
-            // 
-            // colHOTEN
-            // 
-            this.colHOTEN.FieldName = "HOTEN";
-            this.colHOTEN.Name = "colHOTEN";
-            this.colHOTEN.Visible = true;
-            this.colHOTEN.VisibleIndex = 1;
-            // 
-            // colDiem
-            // 
-            this.colDiem.FieldName = "Diem";
-            this.colDiem.Name = "colDiem";
-            this.colDiem.Visible = true;
-            this.colDiem.VisibleIndex = 2;
-            // 
             // btnSave
             // 
             this.btnSave.Location = new System.Drawing.Point(674, 381);
@@ -255,12 +211,12 @@
             // 
             this.mONHOCTableAdapter.ClearBeforeFill = true;
             // 
-            // textBox1
+            // tbLan
             // 
-            this.textBox1.Location = new System.Drawing.Point(514, 85);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 13;
+            this.tbLan.Location = new System.Drawing.Point(621, 84);
+            this.tbLan.Name = "tbLan";
+            this.tbLan.Size = new System.Drawing.Size(41, 20);
+            this.tbLan.TabIndex = 13;
             // 
             // fKSINHVIENLOPBindingSource
             // 
@@ -271,7 +227,13 @@
             // 
             this.fKSINHVIENLOPBindingSource1.DataMember = "FK_SINHVIEN_LOP";
             this.fKSINHVIENLOPBindingSource1.DataSource = this.lOPBindingSource;
-            
+            // 
+            // fillByToolStrip
+            // 
+            this.fillByToolStrip.Location = new System.Drawing.Point(0, 0);
+            this.fillByToolStrip.Name = "fillByToolStrip";
+            this.fillByToolStrip.Size = new System.Drawing.Size(800, 25);
+            this.fillByToolStrip.TabIndex = 0;
             // 
             // spkiemtrasinhvienBindingSource
             // 
@@ -282,24 +244,29 @@
             // 
             this.sp_kiemtrasinhvienTableAdapter.ClearBeforeFill = true;
             // 
-            // spLayDsLopTheoKhoaBindingSource
-            // 
-            this.spLayDsLopTheoKhoaBindingSource.DataMember = "sp_LayDsLopTheoKhoa";
-            this.spLayDsLopTheoKhoaBindingSource.DataSource = this.qLDSVDataSet;
-            // 
             // sp_LayDsLopTheoKhoaTableAdapter
             // 
             this.sp_LayDsLopTheoKhoaTableAdapter.ClearBeforeFill = true;
+            // 
+            // gridView
+            // 
+            this.gridView.AllowUserToAddRows = false;
+            this.gridView.AllowUserToDeleteRows = false;
+            this.gridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridView.Location = new System.Drawing.Point(12, 112);
+            this.gridView.Name = "gridView";
+            this.gridView.Size = new System.Drawing.Size(776, 253);
+            this.gridView.TabIndex = 14;
             // 
             // frmDiemSv
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.gridView);
             this.Controls.Add(this.fillByToolStrip);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbLan);
             this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.sp_LayDiemSinhVienGridControl);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.cbbClass);
@@ -313,16 +280,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.bdsDiem)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sINHVIENBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mONHOCBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spLayDsLopTheoKhoaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lOPBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sp_LayDiemSinhVienBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sp_LayDiemSinhVienGridControl)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fKSINHVIENLOPBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fKSINHVIENLOPBindingSource1)).EndInit();
-            this.fillByToolStrip.ResumeLayout(false);
-            this.fillByToolStrip.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.spkiemtrasinhvienBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.spLayDsLopTheoKhoaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spLayDsLopBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -344,17 +309,12 @@
         private System.Windows.Forms.BindingSource sINHVIENBindingSource;
         private System.Windows.Forms.BindingSource sp_LayDiemSinhVienBindingSource;
         private QLDSVDataSetTableAdapters.sp_LayDiemSinhVienTableAdapter sp_LayDiemSinhVienTableAdapter;
-        private DevExpress.XtraGrid.GridControl sp_LayDiemSinhVienGridControl;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
-        private DevExpress.XtraGrid.Columns.GridColumn colMASV;
-        private DevExpress.XtraGrid.Columns.GridColumn colHOTEN;
-        private DevExpress.XtraGrid.Columns.GridColumn colDiem;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.BindingSource lOPBindingSource;
         private QLDSVDataSetTableAdapters.LOPTableAdapter lOPTableAdapter;
         private System.Windows.Forms.BindingSource mONHOCBindingSource;
         private QLDSVDataSetTableAdapters.MONHOCTableAdapter mONHOCTableAdapter;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbLan;
         private System.Windows.Forms.BindingSource fKSINHVIENLOPBindingSource;
         private System.Windows.Forms.BindingSource fKSINHVIENLOPBindingSource1;
         private System.Windows.Forms.ToolStrip fillByToolStrip;
@@ -362,5 +322,7 @@
         private System.Windows.Forms.BindingSource spkiemtrasinhvienBindingSource;
         private QLDSVDataSetTableAdapters.sp_kiemtrasinhvienTableAdapter sp_kiemtrasinhvienTableAdapter;
         private QLDSVDataSetTableAdapters.sp_LayDsLopTheoKhoaTableAdapter sp_LayDsLopTheoKhoaTableAdapter;
+        private System.Windows.Forms.BindingSource spLayDsLopBindingSource;
+        private System.Windows.Forms.DataGridView gridView;
     }
 }

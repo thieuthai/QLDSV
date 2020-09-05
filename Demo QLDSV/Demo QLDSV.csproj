@@ -98,6 +98,12 @@
     <Compile Include="frmLop.Designer.cs">
       <DependentUpon>frmLop.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReport.Designer.cs">
+      <DependentUpon>frmReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +112,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QLDSVDataSet.cs">
+      <DependentUpon>QLDSVDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="QLDSVDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -116,17 +125,41 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QLDSV_VIEWKHOA.xsd</DependentUpon>
     </Compile>
-    <Compile Include="rpDanhSachSinhVien.cs">
+    <Compile Include="rpBangDiem.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="rpDanhSachSinhVien.Designer.cs">
-      <DependentUpon>rpDanhSachSinhVien.cs</DependentUpon>
+    <Compile Include="rpBangDiem.Designer.cs">
+      <DependentUpon>rpBangDiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rpDSSV.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpDSSV.Designer.cs">
+      <DependentUpon>rpDSSV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rpPhieuDiem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpPhieuDiem.Designer.cs">
+      <DependentUpon>rpPhieuDiem.cs</DependentUpon>
     </Compile>
     <Compile Include="SubjectForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SubjectForm.Designer.cs">
       <DependentUpon>SubjectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xfrmBangDiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xfrmBangDiem.Designer.cs">
+      <DependentUpon>xfrmBangDiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xfrmSinhVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xfrmSinhVien.Designer.cs">
+      <DependentUpon>xfrmSinhVien.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -139,6 +172,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmLop.resx">
       <DependentUpon>frmLop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReport.resx">
+      <DependentUpon>frmReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -154,8 +190,23 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="rpBangDiem.resx">
+      <DependentUpon>rpBangDiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpDSSV.resx">
+      <DependentUpon>rpDSSV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpPhieuDiem.resx">
+      <DependentUpon>rpPhieuDiem.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SubjectForm.resx">
       <DependentUpon>SubjectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xfrmBangDiem.resx">
+      <DependentUpon>xfrmBangDiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xfrmSinhVien.resx">
+      <DependentUpon>xfrmSinhVien.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
     <None Include="Properties\Settings.settings">

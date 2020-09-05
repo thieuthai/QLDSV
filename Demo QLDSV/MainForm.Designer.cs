@@ -45,6 +45,7 @@
             this.btnStudent.TabIndex = 0;
             this.btnStudent.Text = "Quản lý sinh viên";
             this.btnStudent.UseVisualStyleBackColor = true;
+            this.btnStudent.Click += new System.EventHandler(this.btnStudent_Click);
             this.btnStudent.MouseDown += new System.Windows.Forms.MouseEventHandler(this.onBtnStudentPress);
             // 
             // btnClass
@@ -102,6 +103,7 @@
             this.button2.TabIndex = 6;
             this.button2.Text = "In ấn";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // MainForm
             // 

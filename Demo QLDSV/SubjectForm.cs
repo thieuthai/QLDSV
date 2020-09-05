@@ -35,7 +35,23 @@ namespace Demo_QLDSV
             this.mONHOCTableAdapter.Fill(this.qLDSVDataSet.MONHOC);
             // TODO: This line of code loads data into the 'qLDSVDataSet.MONHOC' table. You can move, or remove it, as needed.
 
-            
+            if (Program.currentRole != "PGV")
+            {
+                btnAdd.Enabled = false;
+                btnDelete.Enabled = false;
+                btnSave.Enabled = false;
+                btnUndo.Enabled = false;
+                tbMaMH.Enabled = false;
+                tbTenMH.Enabled = false;
+            } else
+            {
+                btnAdd.Enabled = true;
+                btnDelete.Enabled = true;
+                btnSave.Enabled = true;
+                btnUndo.Enabled = true;
+                tbMaMH.Enabled = true;
+                tbTenMH.Enabled = true;
+            }
         }
 
        
