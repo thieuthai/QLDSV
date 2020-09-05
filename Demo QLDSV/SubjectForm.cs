@@ -30,7 +30,6 @@ namespace Demo_QLDSV
         private void SubjectForm_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'qLDSVDataSet.MONHOC' table. You can move, or remove it, as needed.
-            Debug.WriteLine("SubjectForm_Load");
             this.qLDSVDataSet.Reset();
             this.mONHOCTableAdapter.Fill(this.qLDSVDataSet.MONHOC);
             // TODO: This line of code loads data into the 'qLDSVDataSet.MONHOC' table. You can move, or remove it, as needed.

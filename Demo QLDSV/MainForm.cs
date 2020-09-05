@@ -66,5 +66,11 @@ namespace Demo_QLDSV
             var dssvLopForm = new frmDiemSv();
             dssvLopForm.Show();
         }
+
+        private void btnClass_Click(object sender, EventArgs e)
+        {
+            var frm = new frmLop();
+            frm.Show();
+        }
     }
 }

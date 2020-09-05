@@ -33,5 +33,14 @@ namespace Demo_QLDSV
             xfrmBangDiem.Closed += (s, args) => this.Close();
             xfrmBangDiem.Show();
         }
+
+        private void btnPhieuDiem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            var form = new xfrmInPD();
+            form.Closed += (s, args) => this.Close();
+            form.Show();
+
+        }
     }
 }

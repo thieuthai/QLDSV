@@ -137,6 +137,12 @@
     <Compile Include="rpDSSV.Designer.cs">
       <DependentUpon>rpDSSV.cs</DependentUpon>
     </Compile>
+    <Compile Include="rpInPD.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpInPD.designer.cs">
+      <DependentUpon>rpInPD.cs</DependentUpon>
+    </Compile>
     <Compile Include="rpPhieuDiem.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -154,6 +160,12 @@
     </Compile>
     <Compile Include="xfrmBangDiem.Designer.cs">
       <DependentUpon>xfrmBangDiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="xfrmInPD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="xfrmInPD.designer.cs">
+      <DependentUpon>xfrmInPD.cs</DependentUpon>
     </Compile>
     <Compile Include="xfrmSinhVien.cs">
       <SubType>Form</SubType>
@@ -196,6 +208,9 @@
     <EmbeddedResource Include="rpDSSV.resx">
       <DependentUpon>rpDSSV.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="rpInPD.resx">
+      <DependentUpon>rpInPD.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="rpPhieuDiem.resx">
       <DependentUpon>rpPhieuDiem.cs</DependentUpon>
     </EmbeddedResource>
@@ -204,6 +219,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="xfrmBangDiem.resx">
       <DependentUpon>xfrmBangDiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xfrmInPD.resx">
+      <DependentUpon>xfrmInPD.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="xfrmSinhVien.resx">
       <DependentUpon>xfrmSinhVien.cs</DependentUpon>

@@ -39,12 +39,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.cbbClass = new System.Windows.Forms.ComboBox();
             this.cbbSubject = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.qLDSVDataSet = new Demo_QLDSV.QLDSVDataSet();
             this.mONHOCBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.qLDSVDataSet = new Demo_QLDSV.QLDSVDataSet();
+            this.label4 = new System.Windows.Forms.Label();
             this.mONHOCTableAdapter = new Demo_QLDSV.QLDSVDataSetTableAdapters.MONHOCTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.qLDSVDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mONHOCBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLDSVDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // btnExit
@@ -97,6 +97,7 @@
             this.tbLan.Name = "tbLan";
             this.tbLan.Size = new System.Drawing.Size(41, 21);
             this.tbLan.TabIndex = 19;
+            this.tbLan.Validating += new System.ComponentModel.CancelEventHandler(this.tbLan_Validating);
             // 
             // label3
             // 
@@ -139,6 +140,16 @@
             this.cbbSubject.ValueMember = "MAMH";
             this.cbbSubject.SelectedIndexChanged += new System.EventHandler(this.cbbSubject_SelectedIndexChanged);
             // 
+            // mONHOCBindingSource
+            // 
+            this.mONHOCBindingSource.DataMember = "MONHOC";
+            this.mONHOCBindingSource.DataSource = this.qLDSVDataSet;
+            // 
+            // qLDSVDataSet
+            // 
+            this.qLDSVDataSet.DataSetName = "QLDSVDataSet";
+            this.qLDSVDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -147,16 +158,6 @@
             this.label4.Size = new System.Drawing.Size(47, 13);
             this.label4.TabIndex = 14;
             this.label4.Text = "Môn học";
-            // 
-            // qLDSVDataSet
-            // 
-            this.qLDSVDataSet.DataSetName = "QLDSVDataSet";
-            this.qLDSVDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // mONHOCBindingSource
-            // 
-            this.mONHOCBindingSource.DataMember = "MONHOC";
-            this.mONHOCBindingSource.DataSource = this.qLDSVDataSet;
             // 
             // mONHOCTableAdapter
             // 
@@ -180,8 +181,8 @@
             this.Name = "xfrmBangDiem";
             this.Text = "xfrmBangDiem";
             this.Load += new System.EventHandler(this.xfrmBangDiem_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.qLDSVDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mONHOCBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLDSVDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

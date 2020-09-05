@@ -56,6 +56,7 @@
             this.btnClass.TabIndex = 1;
             this.btnClass.Text = "Quản lý lớp";
             this.btnClass.UseVisualStyleBackColor = true;
+            this.btnClass.Click += new System.EventHandler(this.btnClass_Click);
             // 
             // btnSubject
             // 

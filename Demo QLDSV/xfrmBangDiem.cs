@@ -105,5 +105,15 @@ namespace Demo_QLDSV
         {
             resetData();
         }
+
+        private void tbLan_Validating(object sender, CancelEventArgs e)
+        {
+            int a = 0;
+            bool result = int.TryParse(tbLan.Text, out a);
+           if (!result || a < 0)
+            {
+                e.Cancel = true;
+            }
+        }
     }
 }

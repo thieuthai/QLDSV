@@ -217,6 +217,7 @@
             this.tbLan.Name = "tbLan";
             this.tbLan.Size = new System.Drawing.Size(41, 20);
             this.tbLan.TabIndex = 13;
+            this.tbLan.Validating += new System.ComponentModel.CancelEventHandler(this.tbLan_Validating);
             // 
             // fKSINHVIENLOPBindingSource
             // 

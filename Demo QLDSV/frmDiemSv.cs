@@ -94,6 +94,7 @@ namespace Demo_QLDSV
             dt.Columns.Add("DIEM");
             dt.Columns[0].ReadOnly = true;
             dt.Columns[1].ReadOnly = true;
+            dt.Columns[2].DataType = typeof(Int16);
 
             gridView.DataSource = dt;
             Program.connect.Close();
@@ -130,14 +131,28 @@ namespace Demo_QLDSV
                 Program.cmd.Parameters.Add("@LAN", SqlDbType.SmallInt).Value = tbLan.Text;
                 Program.cmd.Parameters.Add("@DIEM", SqlDbType.Float).Value = row.Cells[2].Value;
 
-                Program.cmd.ExecuteNonQuery();
+                int result = Program.cmd.ExecuteNonQuery();
+                if (result != 1)
+                {
+                    MessageBox.Show("Có lỗi trong quá trình lưu điểm. Vui lòng thử lại", "Lỗi!", MessageBoxButtons.OK);
+                    break;
+                }
 
             }
 
-
             Program.connect.Close();
+
+            MessageBox.Show("Lưu điểm thành công!", "Thông báo!", MessageBoxButtons.OK);
         }
 
-   
+        private void tbLan_Validating(object sender, CancelEventArgs e)
+        {
+            int a = 0;
+            bool result = int.TryParse(tbLan.Text, out a);
+            if (!result || a < 0)
+            {
+                e.Cancel = true;
+            }
+        }
     }
 }

@@ -58,6 +58,7 @@
             this.btnPhieuDiem.Size = new System.Drawing.Size(124, 47);
             this.btnPhieuDiem.TabIndex = 2;
             this.btnPhieuDiem.Text = "Phiếu điểm";
+            this.btnPhieuDiem.Click += new System.EventHandler(this.btnPhieuDiem_Click);
             // 
             // frmReport
             // 
